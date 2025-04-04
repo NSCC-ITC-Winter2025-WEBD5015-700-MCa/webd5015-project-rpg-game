@@ -1,3 +1,9 @@
 {
-    "help": "<span class=\"font-bold\">HELP:</span><p>Try These Commands:</p><div class=\"flex\"><ul class=\"w-[10%] flex-row\"><li> - SAY</li><li> - WALK</li></ul><ul class=\"w-[10%] flex-row\"><li> - CLEAR</li></ul></div>"
+    "look": "Look around the current area.",
+    "say" : "Speak the words provided after SAY command.",
+    "walk": "Walk in the specified direction.",
+    "clear": "Clear the terminal.",
+    "ask": "Ask the program a question.",
+    "attack": "Attacks the specified creature.",
+    "run": "Run from battle."
 }

@@ -1,4 +1,5 @@
 import responses from './responses.json';
+import { Help } from './commands'
 import { getLocationData, setUserLocation } from '@/lib/db/queries';
 
 let current_player: { id: number; name: any; location_id: string}
@@ -91,7 +92,7 @@ export const handleUserInput = async (player_input: any) => {
     if(split_input_array.length == 0){
       switch(first_string) {
         case '?':
-            outputToTerminal(responses.help)
+            return
           break;
         case 'say':
             outputToTerminal(`What would you like to say?`)
@@ -115,4 +116,4 @@ export const handleUserInput = async (player_input: any) => {
           break;
       }
     }
-  }
+}
